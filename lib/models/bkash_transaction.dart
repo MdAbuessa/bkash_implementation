@@ -75,19 +75,19 @@ class BkashTransaction {
   });
 
   Map<String, dynamic> toJson() => {
-        'paymentId': paymentId,
-        'trxID': trxID,
-        'amount': amount,
-        'currency': currency,
-        'customerMsisdn': customerMsisdn,
-        'merchantInvoiceNumber': merchantInvoiceNumber,
-        'date': date.toIso8601String(),
-        'status': status.name,
-        'type': type.name,
-        'recipientName': recipientName,
-        'operator': operator,
-        'errorMessage': errorMessage,
-      };
+    'paymentId': paymentId,
+    'trxID': trxID,
+    'amount': amount,
+    'currency': currency,
+    'customerMsisdn': customerMsisdn,
+    'merchantInvoiceNumber': merchantInvoiceNumber,
+    'date': date.toIso8601String(),
+    'status': status.name,
+    'type': type.name,
+    'recipientName': recipientName,
+    'operator': operator,
+    'errorMessage': errorMessage,
+  };
 
   factory BkashTransaction.fromJson(Map<String, dynamic> json) {
     return BkashTransaction(
